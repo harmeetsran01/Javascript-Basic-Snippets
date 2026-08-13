@@ -35,7 +35,12 @@ json = {
     ThirdGame: 'COD'
 }
 for (let key in json){  // For in loop is used to iterate over the properties of an object or the indices of an array
-    console.log(key + ':' + json[key]);
+    console.log(key + ':' + json[key]); //why json[key], not json.key ? 
+    // because key is a variable here and we are storing . how loop is working here? 
+    // .json works for direct access of values , but for loops we have to use [] 
+    // because loop is taking dynamic values so we have to use [] to access values.
+    // .json don't work for dynamic values.
+    
 }
 
 //for each loop is used to iterate over the elements of an array or iterable object

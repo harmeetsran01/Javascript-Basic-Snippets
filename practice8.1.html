@@ -11,13 +11,12 @@
     <button id="stop">stop</button>
 </body>
 <script>    
-   
     document.querySelector('#start').addEventListener('click',()=>{
         document.querySelector('h1').innerHTML = "See Console"
         Time = setInterval(
             (str)=>{
                 console.log(str,new Date().toLocaleTimeString())
-                    },1000,"String here will be a argument, passed on CB of first parameter of setInternal str")        
+                    },1000,"String here will be a argument, passed on CB of first parameter of setInternal str")                     
     })
 
     document.querySelector('#stop').addEventListener('click',()=>{

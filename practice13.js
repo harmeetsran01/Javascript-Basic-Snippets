@@ -26,7 +26,7 @@ function greet() { //default taking greet(this)
 greet.call(person);
 
 const person1 = {
-  name: "Rahul",
+  name: "Punni",
   greet: function() {
     console.log("Hello " + this.name);
   }
@@ -37,3 +37,4 @@ const person2 = {
 };
 
 person1.greet.call(person2);
+person1.greet(person2); //here the default context of person2 is passed to greet function

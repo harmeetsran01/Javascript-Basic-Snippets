@@ -9,9 +9,12 @@ const obj1 = {
     
 }
 
-tempobj = Object.assign({},obj1)
-tempobj = Object.keys(obj1)
-tempobj = Object.values(obj1)
+tempobj = Object.assign({},obj1) //copy obj1 to tempobj
+console.log(tempobj);
+tempobj = Object.keys(obj1) //returns array of keys
+console.log(tempobj);
+tempobj = Object.values(obj1) //returns array of values
+console.log(tempobj);
 tempobj = {...obj1} //exract values same as assign function
 console.log(tempobj);
 
@@ -35,12 +38,18 @@ let func = () => {
     console.log("Hi")
 }
 
-// spread or rest operator
+//rest operator
 
-function calculation(val1,...num1){
+function calculation(val1,...num1){ //this is rest operator(...num1)
     return num1 //returns array
 }
 console.log(calculation(100,200,300)) 
+
+//spread operator
+const arr1 = [1,2,3,4]
+const arr2 = [5,6,7,8]
+
+console.log(...arr1,...arr2) //this is spread operator: spread values of arrays into another arrays
 
 //Pass obj to func
 const user = {
@@ -52,7 +61,7 @@ function handleuser(anyobj){
 console.log(`Username is ${anyobj.username} and id is ${anyobj.id}`);
 }
 handleuser(user)
-handleuser({username:"Harmeet",id:100})
+handleuser({username:"Harmeet",id: 100})
 
 //Pass array to func
 const myNewArray = [100,200,300,400]

@@ -61,12 +61,10 @@
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
+            console.log(removeIt);      //will remove Li, as being a parent node       
             removeIt.remove()
-        }
-    
-        
-    })
-    
+        }    
+    })    
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
